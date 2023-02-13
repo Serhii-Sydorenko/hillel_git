@@ -37,7 +37,7 @@ films_titles = {
 
 import os
 os.mkdir("Harry Potter")
-os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/Harry Potter/")
+os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/files/Harry Potter/")
 
 for i in range(len(films_titles['results'])):
  os.makedirs(films_titles['results'][i]['title'])
@@ -45,7 +45,7 @@ for i in range(len(films_titles['results'])):
 import string
 for i in os.listdir():
   for c in string.ascii_uppercase:
-    os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/Harry Potter/"+str(i))
+    os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/files/Harry Potter/"+str(i))
     os.makedirs(c)
 
 films_awards = [{'links': {'next': None, 'previous': None},
@@ -3857,7 +3857,7 @@ film_6 = sorted(film_6, key=lambda i: i['award_name'])
 film_7 = sorted(film_7, key=lambda i: i['award_name'])
 film_8 = sorted(film_8, key=lambda i: i['award_name'])
 
-os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/Harry Potter/")
+os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/files/Harry Potter/")
 
 award_list = []
 
@@ -3869,14 +3869,14 @@ award_list = set(award_list)
 award_list = sorted(award_list)
 
 for i in os.listdir():
-  os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/Harry Potter/"+str(i))
+  os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/files/Harry Potter/"+str(i))
   for q in os.listdir():
-    os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/Harry Potter/"+str(i)+"/"+str(q))
+    os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/files/Harry Potter/"+str(i)+"/"+str(q))
     for y in award_list:
       if y[0] == os.getcwd()[-1]:
         file = open(y+'.txt','w')
 
 
 
-os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/Harry Potter/")
+os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/files/Harry Potter/")
 
