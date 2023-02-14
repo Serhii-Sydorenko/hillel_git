@@ -36,7 +36,6 @@ films_titles = {
 }
 
 import os
-os.mkdir("Harry Potter")
 os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/files/Harry Potter/")
 
 for i in range(len(films_titles['results'])):
@@ -3880,3 +3879,4 @@ for i in os.listdir():
 
 os.chdir("D:/Users/dn300990ssk/PycharmProjects/hillel_git/files/Harry Potter/")
 
+print(films_awards)
