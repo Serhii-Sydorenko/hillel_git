@@ -27,3 +27,5 @@ def imperius():
             data[0]['results'][i]['type'] = "Winner"
     pprint(data[0]['results'])
 imperius()
+
+
